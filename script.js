@@ -29,7 +29,7 @@ async function getQuote() {
     const response = await fetch(proxyUrl + apiUrl);
     const data = await response.json();
     if (data.quoteAuthor === '') {
-      authorText.innerText = 'Unknown'
+      authorText.innerText = '--' + 'Unknown'
     } else {
       authorText.innerText = '--' + data.quoteAuthor;
     }
