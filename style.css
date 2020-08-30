@@ -1,9 +1,18 @@
+/* ---------------------- Quote Generator ----------------------------------- */
+/* -- Udemy Portfolio Class Project: Quote Generator -- */
+/* -------------------------------------------------------------------------- */
+
+/* ---------------------- Google Fonts (don't really need) ------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+/* -------------------------------------------------------------------------- */
+/* Prevent padding fm adding extra height or width & force horiz. scroll bar */
 html {
   box-sizing: border-box;
 }
 
+/* ---------------------- Vector Graphics ----------------------------------- */
+/* Vector graphics background : https://www.heropatterns.com/ */
 body {
   margin: 0;
   min-height: 100vh;
@@ -18,6 +27,7 @@ body {
   justify-content: center;
 }
 
+/* -------------------------------------------------------------------------- */
 .quote-container {
   width: auto;
   max-width: 900px;
@@ -46,6 +56,7 @@ body {
   font-style: italic;
 }
 
+/* -------------------------------------------------------------------------- */
 .button-container {
   margin-top: 15px;
   display: flex;
@@ -59,10 +70,10 @@ button {
   border: none;
   border-radius: 10px;
   color: #fff;
-  background: #333;
+  background-color: #333;
   outline: none;
-  padding: 0.5rem 1.8rem;
-  box-shadow: 0 0.3rem rgba(121, 121 121 0.65)
+  padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121 121 0.65);
 }
 
 button:hover {
@@ -74,6 +85,7 @@ button:active {
   box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 
+/* -------------------------------------------------------------------------- */
 .twitter-button:hover {
   color: #38a1f3;
 }
@@ -82,10 +94,10 @@ button:active {
   font-size: 1.5rem;
 }
 
+/* -------------------------------------------------------------------------- */
 /* Loader */
-
 .loader {
-  border: 16px solid #f3f3f3; /* Light grey */
+  border: 16px solid #f3f3f3;
   border-top: 16px solid #333;
   border-radius: 50%;
   width: 120px;
@@ -93,6 +105,7 @@ button:active {
   animation: spin 2s linear infinite;
 }
 
+/* -------------------------------------------------------------------------- */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
